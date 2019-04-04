@@ -15,11 +15,10 @@ Measurement = Base.classes.measurement
 Station = Base.classes.station
 session = Session(engine)
 
-# 2. Create an app
+
 app = Flask(__name__)
 
 
-# 3. Define static routes
 @app.route("/")
 def home():
     return (
